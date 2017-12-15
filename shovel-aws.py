@@ -4,7 +4,7 @@ import json
 #aws configuration
 awsClient = AWSIoTMQTTClient("multitech-gateway")
 awsClient.configureEndpoint("axxxxxxxxx.iot.us-west-2.amazonaws.com", 8883)
-awsClient.configureCredentials("/home/root/aws/root-CA.crt", "/home/root/aws/Mote.private.key", "/home/root/aws/Mote.cert.pem")
+awsClient.configureCredentials("/home/root/aws/root-CA.crt", "/home/root/aws/conduit.private.key", "/home/root/aws/conduit.cert.pem")
 awsClient.configureOfflinePublishQueueing(-1)  # Infinite offline Publish queueing
 awsClient.configureDrainingFrequency(2)  # Draining: 2 Hz
 awsClient.configureConnectDisconnectTimeout(10)  # 10 sec
