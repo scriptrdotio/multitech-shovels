@@ -1,4 +1,4 @@
-#start script with token as only paramtere
+#start script with token as only paramter
 #eg, python shovel-scriptr.py XXXXxxxx== (where XXXXxxxx== is your device token)
 import paho.mqtt.client as mqtt
 import json
